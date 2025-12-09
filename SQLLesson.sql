@@ -8,6 +8,7 @@
 --     , ps.Tariff
 --     , DATEADD(WEEK, -2, ps.AdmittedDate) AS ReminderDate
 --     , DATEDIFF(DAY, ps.AdmittedDate , ps.DischargeDate)+1 AS DaysInHospital
+--       ,DATEDIFF(DAY, ps.AdmittedDate , ps.DischargeDate)+1 AS LengthOfStay
 -- FROM PatientStay AS ps
 
 -- WHERE ps.Hospital IN ('KINGSTON','PRUH')
